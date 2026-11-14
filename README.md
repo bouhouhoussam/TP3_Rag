@@ -9,7 +9,7 @@ le texte ainsi que les images de l'article *Attention Is All You Need*.
 - [x] Étape 0 : Initialisation du projet
 - [X] Étape 1 : Extraction du contenu multimodal (texte et images)
 - [X] Étape 2 : Génération des embeddings CLIP dans un espace latent partagé
-- [ ] Étape 3 : Indexation dans ChromaDB
+- [X] Étape 3 : Indexation dans ChromaDB
 - [ ] Étape 4 : Recherche multimodale par similarité cosinus
 - [ ] Étape 5 : Transformation du retriever en outil agentique
 - [ ] Étape 6 : Agent ReAct avec LangGraph
