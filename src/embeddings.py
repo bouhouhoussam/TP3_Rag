@@ -48,4 +48,7 @@ def encoder_images(chemins, batch_size=16):
     for i in range(0, len(chemins), batch_size):
         imgs = [preprocess(Image.open(p).convert("RGB")) for p in chemins[i:i + batch_size]]
         batch = torch.stack(imgs).to(DEVICE)
-        emb =
+        emb = model.encode_image(batch)
+        emb = emb / emb.norm(dim=-1, keepdim=True)
+        vecteurs.append(emb.cpu().numpy())
+    return np.concatenate(vecteurs, axis=0)
