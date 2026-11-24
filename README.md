@@ -12,7 +12,7 @@ le texte ainsi que les images de l'article *Attention Is All You Need*.
 - [X] Étape 3 : Indexation dans ChromaDB
 - [X] Étape 4 : Recherche multimodale par similarité cosinus
 - [X] Étape 5 : Transformation du retriever en outil agentique
-- [ ] Étape 6 : Agent ReAct avec LangGraph
+- [X] Étape 6 : Agent ReAct avec LangGraph
 - [ ] Étape 7 : Tests et validation
 
 ## Installation
