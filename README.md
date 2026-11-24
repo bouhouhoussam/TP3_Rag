@@ -13,7 +13,7 @@ le texte ainsi que les images de l'article *Attention Is All You Need*.
 - [X] Étape 4 : Recherche multimodale par similarité cosinus
 - [X] Étape 5 : Transformation du retriever en outil agentique
 - [X] Étape 6 : Agent ReAct avec LangGraph
-- [ ] Étape 7 : Tests et validation
+- [X] Étape 7 : Tests et validation
 
 ## Installation
     uv sync
@@ -21,3 +21,7 @@ le texte ainsi que les images de l'article *Attention Is All You Need*.
 - `data/` : PDF source
 - `notebooks/` : un notebook par étape, avec les sorties
 - `src/embeddings.py` : encodage CLIP (texte et image) et découpage en chunks
+
+## Limites connues
+- Le modèle local `llama3.2:3b` (3 milliards de paramètres, CPU) appelle parfois l'outil `consulter_pdf` même pour une simple salutation.
+- L'agent récupère les figures (chemin, page) mais ne les analyse pas visuellement : le modèle de l'agent ne traite que du texte.
